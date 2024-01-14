@@ -73,6 +73,84 @@ nav a:hover{
     width: 280px;
     height: 534.785px;
 }
+/* main section styles */
+.customer-section{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 150px;
+}
+.cutomer-tittle{
+    color: #260041;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    margin-bottom: 215px;
+}
+.head{
+    color:  #0F001A;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    margin-top: 50px;
+}
+.paragraph{
+    color: #0F001A;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+.btn-1{
+    border: none;
+    background: none;
+    color: #4A99D3;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.background{
+    margin-top: 30px;
+    text-align: center;
+    width: 380px;
+    height: 480px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 5px 20px 50px 0px rgba(74, 153, 211, 0.20);
+}
+.works-section{
+    margin-top: 150px;
+    background: rgba(74, 153, 211, 0.10);
+    height: 475px;
+}
+.works-tittle{
+    color: #4A99D3;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-top: 95px;
+}
+.worker-position{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.img-5{
+    position: relative;
+    left: 70px;
+    z-index: -1;
+}
+.img-6{
+    position: relative;
+    right: 70px;
+    z-index: -1;
+}
+.download-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
 
 @media screen and (max-width: 576px) {
     .banner{
@@ -82,15 +160,49 @@ nav a:hover{
         margin-left: 50px;
         flex-direction: column;
     }
-    .banner-container{
+    .banner-container,.cutomer-tittle,.center{
         text-align: center;
     }
+    .customer-section{
+        flex-direction: column;
+    }
+    .worker-position{
+        flex-direction: column;
+    }
+    .download-section{
+        flex-direction: column;
+    }
+    .works-section{
+        height: 100%;
+    }
+    .img-5{
+        left: 30px;
+    }
+    .img-6{
+        right: -30px;
+    }
+    
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .banner{
         flex-direction: column-reverse;
     }
-    .banner-container{
+    .banner-container,.cutomer-tittle,.center{
         text-align: center;
-    }   
+    } 
+    .customer-section,.woker-position{
+        flex-wrap: wrap;
+    }
+    .works-section{
+        width: 100%;
+    }  
+    .download-section{
+        flex-direction: column;
+    }
+    .img-5{
+        left: 30px;
+    }
+    .img-6{
+        right: -30px;
+    }
 }
