@@ -139,6 +139,9 @@ nav a:hover{
     width: 600px;
     height: 600px;
 }
+.center p{
+    font-size: 12px;
+}
 @media screen and (max-width: 576px) {
     header{
         height: 100%;
